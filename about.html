@@ -4,9 +4,36 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hisyam Portfolio's</title>
-
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <style>
+            nav, article, footer {
+                text-align: center;
+                opacity: 0;
+                animation: fadeInUp 1s ease forwards;
+                animation-delay: 0.5s;
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
     </head>
     <body>
         <!--Navigasi-->
@@ -18,7 +45,7 @@
         </nav>
         <hr />
         <!--Profile-->
-        <article style="text-align: center;">
+        <article>
             <h1>About Me</h1>
             <p>
                 Assalamu'alaikum, saya adalah Mahasiswa Universitas Terbuka
@@ -40,7 +67,7 @@
         </article>
         <hr />
         <!--Footer-->
-        <footer style="text-align: center;">
+        <footer>
             <div>Copyright &copy; 2025 Nur Amali Hisyam.</div>
         </footer>
     </body>
