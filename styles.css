@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+}
+
+#navbar {
+    display: flex;
+    background-color: #f4f4f4;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    align-items: center;  
+}
+
+#navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.button {
+    background-color: green;
+    padding : 10px 20px;
+    border-radius: 5px;
+    color: white !important;
+}
+
+#introduction {
+    padding: 40px 80px;
+}
+
+#profile {
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#text-profile {
+    display: flex;
+    flex-direction: column;
+}
+

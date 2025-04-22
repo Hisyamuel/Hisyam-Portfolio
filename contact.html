@@ -6,9 +6,9 @@
         <title>Hisyam Portfolio's</title>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
         <style>
-            nav, div, footer {
-                text-align: center;
+            #navbar, div, footer {
                 opacity: 0;
                 animation: fadeInUp 1s ease forwards;
                 animation-delay: 0.5s;
@@ -37,15 +37,18 @@
     </head>
     <body>
         <!--Navigasi-->
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="cv-hisyam.pdf">Download CV</a> |
-            <a href="contact.html">Contact</a> |
-            <a href="about.html">About</a> |
-        </nav>
+        <div id="navbar">
+            <a href="">nramlhsym</a>
+                <div style="display: flex; gap: 40px; align-items: center;">
+                    <a href="cv-hisyam.pdf">My Curriculum Vitae</a>
+                    <a href="https://nramlhsym.netlify.app/">Project</a>
+                    <a href="index.html">Skill</a>
+                    <a href="contact.html" class="button">Contact</a>
+                </div>
+        </div>
         <hr />
         <!--Kontak-->
-        <div>
+        <div style="text-align: center;">
             <h1>Contact Me</h1>
             <form>
                 <label for="email">Email :</label><br />
@@ -58,10 +61,15 @@
                 <input type="submit" value="Kirim" />
             </form>
         </div>
+        <br />
+
+        <br />
+        
         <hr />
+
         <!--Footer-->
         <footer>
-            <div>Copyright &copy; 2025 Nur Amali Hisyam.</div>
+            <div style="text-align: center;">Copyright &copy; 2025 Nur Amali Hisyam.</div>
         </footer>
     </body>
 </html>
