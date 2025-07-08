@@ -4,30 +4,31 @@
 
 body, p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f4f4f4;
 }
 
 #navbar {
     display: flex;
-    background-color: #f4f4f4;
+    background-color: #a2bee2;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     padding-left: 80px;
     padding-right: 80px;
-    align-items: center;  
+    align-items: center;
 }
 
-#navbar a{
-    text-decoration: none;
-    color: black;
-}
-
-.button {
-    background-color: rgb(18, 52, 136);
-    padding : 10px 20px;
+#navbar a:hover{
+    color: navy;
+    padding: 10px;
+    background-color: white;
+    transition: background-color width 0.3s none, height 0.3s none;
     border-radius: 5px;
-    color: white !important;
+}
+
+a {
+    text-decoration: none;
 }
 
 #introduction {
@@ -46,6 +47,23 @@ body, p {
     flex-direction: column;
 }
 
+
+table, thead,tr, th, td {
+    border-collapse: collapse;
+    border: 3px solid rgb(18, 52, 136);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+thead {
+    color: #000080;
+}
+
+.contact {
+    text-align: center;
+    padding-top: 30px;
+}
+
 .contact-form {
     text-align: center;
     padding: 30px;
@@ -60,6 +78,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    padding-top: 30px;
 }
 
 form input, form textarea, form select {
